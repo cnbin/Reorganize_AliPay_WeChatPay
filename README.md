@@ -1,5 +1,5 @@
 ### 前言
-===
+---
 最近在做微信支付以及支付宝支付两项功能.
 
 发现支付宝支付提供的接口对开发者十分的友好, 而微信支付的Demo难道是实习生做的?
@@ -9,14 +9,14 @@
 为了能够使遇到相同问题的同学不再纠结, 所以将最后的整合版本放出. 希望能给大家提供到帮助
 
 ### Reorganize_AliPay_WeChatPay
-===
+---
 
 * 支持微信 1.6.1 版本
 * 支持支付宝 3.0.1 版本
 
 
 #### 依赖说明
-===
+---
 1. 添加微信SDK, AlipaySDK.
 2. 添加微信依赖文件: `getIPhoneIP` , `DataMD5` , `openssl` , `XMLDictionary`.
 3. 按照官方文档添加 `APP UrlScheme`.
@@ -24,14 +24,14 @@
 
 
 #### 注意事项
-===
+---
 1. 是否使用了友盟SDK, 如果有使用, 请参考一下文章调整调用顺序. [链接](http://www.cocoachina.com/bbs/read.php?tid-321546.html)
 2. 如果使用了ShareSDK, 微信SDK不需要初始化.
 3. openSSL如果产生报错问题, 请参考以下文章. [链接](http://blog.csdn.net/l648320605/article/details/38919861)
 
 
 #### 使用说明
-===
+---
 ###### 初始化 PayManager
 方法1: 保守方法, 添加依赖参数, 保证其他方法调用无误
 
@@ -71,7 +71,7 @@
 	- (void)result:(PayResult)block;
 
 #### DEMO
-===
+---
 
 	/*
 	*	init
@@ -111,7 +111,7 @@
 	[self.payManager AliPayWithOrderSpec:OrderSpec];
 	
 #### 期待
-===
+---
 * 我相信这个DEMO还是有很多问题, 但是对于初步使用应该有很好的帮助. 
 
 * 如果你觉得有什么问题, 请issues我. 
