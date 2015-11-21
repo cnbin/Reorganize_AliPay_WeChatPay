@@ -32,21 +32,133 @@
 
 #### 使用说明
 ---
+###### 导入依赖文件及PayManager类.
+
+###### AppDelegate中方法添加
+
+1. 导入PayManager文件
+
+		#import "PayManager.h"
+2. 初始化微信SDK
+
+		[WXApi registerApp:WeiChatAppID];	
+3. 添加支付回调数据处理方法
+
+	方法1:
+
+		-(BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url{
+    
+   		return [WXApi handleOpenURL:url delegate:self];
+    
+		}
+		
+	方法2:
+
+		-(BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options{
+
+    
+    	NSString *annotation = options[@"UIApplicationOpenURLOptionsSourceApplicationKey"];
+    
+    	if ([annotation isEqualToString:@"com.tencent.xin"]) {
+        	//跳转微信
+        	return [WXApi handleOpenURL:url delegate:self];
+    	}
+    		if ([annotation isEqualToString:@"com.alipay.iphoneclient"]) {
+        		//支付宝支付
+        	[[AlipaySDK defaultService] processOrderWithPaymentResult:url standbyCallback:^(NSDictionary *resultDic) {
+        	}];
+        
+    	}
+    
+    	return YES;
+    
+		}
+		
+	方法3:
+
+		- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  		sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation {
+    
+    	if ([annotation isEqualToString:@"com.tencent.xin"]) {
+        //跳转微信
+        return [WXApi handleOpenURL:url delegate:self];
+    	}
+    
+    	if ([annotation isEqualToString:@"com.alipay.iphoneclient"]) {
+        //支付宝支付
+        [[AlipaySDK defaultService] processOrderWithPaymentResult:url standbyCallback:^(NSDictionary *resultDic) {
+        }];
+        
+    	}
+    	return YES;
+		}
+
+4. 添加微信处理方法
+
+		-(void)onReq:(BaseReq *)req{
+    
+		}
+
+		-(void)onResp:(BaseResp *)resp{	
+    	NSString *strTitle;
+    	if ([resp isKindOfClass:[SendMessageToWXResp class]]) {
+        strTitle = [NSString stringWithFormat:@"发送媒体消息结果"];
+    	}
+    	if ([resp isKindOfClass:[PayResp class]]) {
+        strTitle = [NSString stringWithFormat:@"支付结果"];
+        
+        BOOL isSuccess  = NO;
+        
+        switch (resp.errCode) {
+            case WXSuccess:
+            {
+                NSLog(@"支付成功!");
+                isSuccess = YES;
+            }
+                break;
+            case WXErrCodeCommon:
+            case WXErrCodeUserCancel:
+            case WXErrCodeSentFail:
+            case WXErrCodeUnsupport:
+            case WXErrCodeAuthDeny:
+            default:
+            {
+                NSLog(@"支付失败!");
+                isSuccess = NO;
+                
+            }
+                break;
+        }
+        
+        [self payResult:isSuccess];
+    	}
+		}
+
+
+5. 添加PayManager处理方法
+
+		- (void)payResult:(BOOL)isSuccess{
+    	[PayManager payResult:isSuccess];
+		}
+		
+
 ###### 初始化 PayManager
 方法1: 保守方法, 添加依赖参数, 保证其他方法调用无误
 
-	/**
- 	*  初始化
- 	*
- 	*  @param orderID            订单
- 	*  @param orderNum           物品数量
- 	*  @param productName        商品名称
- 	*  @param productDescription 商品简介
- 	*  @param price              商品价格
- 	*
- 	*  @return self
- 	*/
-	-(instancetype)initWithOrderID:(NSString *)orderID
+		/**
+ 		*  初始化
+ 		*
+ 		*  @param orderID            订单
+ 		*  @param orderNum           物品数量
+ 		*  @param productName        商品名称
+ 		*  @param productDescription 商品简介
+ 		*  @param price              商品价格
+ 		*
+ 		*  @return self
+ 		*/
+		-(instancetype)initWithOrderID:(NSString *)orderID
                    		productName:(NSString *)productName
             	productDescription:(NSString *)productDescription
                          		price:(CGFloat)price;
@@ -58,8 +170,43 @@
 	
 ###### 方法调用
 
-
-###### AppDelegate中方法添加
+	
+	/**
+	 *  支付宝支付
+	 */
+	- (void)AliPay;
+	
+	/**
+	 *  支付宝支付
+	 *
+	 *  @param alipayOrder alipayOrder
+	 */
+	- (void)AliPayWithOrder:(AlipayOrder *)alipayOrder;
+	
+	/**
+	 *  支付宝支付
+	 *
+	 *  @param orderSpec order.description
+	 */
+	- (void)AliPayWithOrderSpec:(NSString *)orderSpec;
+	
+	
+	/**
+	 *  微信支付
+	 *
+	 *  @param nonceStr 防止产生重复订单的唯一的随机字符串
+	 */
+	- (void)WeChatPayWithNonceStr:(NSString *)nonceStr;
+	
+	/**
+	 *  微信支付
+	 *
+	 *  @param prepayId 通过腾讯服务器与订单信息产生的订单ID
+	 *  @param noncestr 防止产生重复订单的唯一的随机字符串
+	 */
+	- (void)WeChatPayWithPrepayId:(NSString *)prepayId
+                     noncestr:(NSString *)noncestr;
+	
 
 
 
