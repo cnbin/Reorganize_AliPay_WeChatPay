@@ -81,13 +81,14 @@
     if ([annotation isEqualToString:@"com.tencent.xin"]) {
         //跳转微信
         return [WXApi handleOpenURL:url delegate:self];
-    }
-    
-    if ([annotation isEqualToString:@"com.alipay.iphoneclient"]) {
+    }else if ([annotation isEqualToString:@"com.alipay.iphoneclient"]) {
         //支付宝支付
         [[AlipaySDK defaultService] processOrderWithPaymentResult:url standbyCallback:^(NSDictionary *resultDic) {
         }];
         
+    }else if ([sourceApplication isEqualToString:@"com.tencent.xin"]) {
+        //跳转微信
+        return [WXApi handleOpenURL:url delegate:self];
     }
     return YES;
 }
