@@ -59,11 +59,11 @@
     NSString *annotation = options[@"UIApplicationOpenURLOptionsSourceApplicationKey"];
     
     if ([annotation isEqualToString:@"com.tencent.xin"]) {
-        //跳转微信
+        //微信支付回调
         return [WXApi handleOpenURL:url delegate:self];
     }
     if ([annotation isEqualToString:@"com.alipay.iphoneclient"]) {
-        //支付宝支付
+        //支付宝支付回调
         [[AlipaySDK defaultService] processOrderWithPaymentResult:url standbyCallback:^(NSDictionary *resultDic) {
         }];
         
@@ -79,17 +79,23 @@
          annotation:(id)annotation {
     
     if ([annotation isEqualToString:@"com.tencent.xin"]) {
-        //跳转微信
+        //微信支付回调
         return [WXApi handleOpenURL:url delegate:self];
     }else if ([annotation isEqualToString:@"com.alipay.iphoneclient"]) {
-        //支付宝支付
+        //支付宝支付回调
+        [[AlipaySDK defaultService] processOrderWithPaymentResult:url standbyCallback:^(NSDictionary *resultDic) {
+        }];
+        
+    }else if ([sourceApplication isEqualToString:@"com.alipay.iphoneclient"]) {
+        //支付宝支付回调
         [[AlipaySDK defaultService] processOrderWithPaymentResult:url standbyCallback:^(NSDictionary *resultDic) {
         }];
         
     }else if ([sourceApplication isEqualToString:@"com.tencent.xin"]) {
-        //跳转微信
+        //微信支付回调
         return [WXApi handleOpenURL:url delegate:self];
     }
+    
     return YES;
 }
 
