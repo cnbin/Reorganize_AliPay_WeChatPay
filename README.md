@@ -46,54 +46,18 @@
 
 	方法1:
 
-		-(BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url{
-    
-   		return [WXApi handleOpenURL:url delegate:self];
-    
-		}
+		-(BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url;
 		
 	方法2:
 
-		-(BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options{
-
-    
-    	NSString *annotation = options[@"UIApplicationOpenURLOptionsSourceApplicationKey"];
-    
-    	if ([annotation isEqualToString:@"com.tencent.xin"]) {
-        	//跳转微信
-        	return [WXApi handleOpenURL:url delegate:self];
-    	}
-    		if ([annotation isEqualToString:@"com.alipay.iphoneclient"]) {
-        		//支付宝支付
-        	[[AlipaySDK defaultService] processOrderWithPaymentResult:url standbyCallback:^(NSDictionary *resultDic) {
-        	}];
-        
-    	}
-    
-    	return YES;
-    
-		}
+		-(BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options;
 		
 	方法3:
 
 		- (BOOL)application:(UIApplication *)application
-            openURL:(NSURL *)url
+              		open(NSURL *)urlURL:
   		sourceApplication:(NSString *)sourceApplication
-         annotation:(id)annotation {
-    
-    	if ([annotation isEqualToString:@"com.tencent.xin"]) {
-        //跳转微信
-        return [WXApi handleOpenURL:url delegate:self];
-    	}
-    
-    	if ([annotation isEqualToString:@"com.alipay.iphoneclient"]) {
-        //支付宝支付
-        [[AlipaySDK defaultService] processOrderWithPaymentResult:url standbyCallback:^(NSDictionary *resultDic) {
-        }];
-        
-    	}
-    	return YES;
-		}
+         		annotation:(id)annotation ;
 
 4. 添加微信处理方法
 
