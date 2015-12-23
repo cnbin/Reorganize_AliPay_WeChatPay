@@ -109,16 +109,16 @@
 		
 
 ###### 初始化 PayManager
-方法1: 保守方法, 添加依赖参数, 保证其他方法调用无误
+方法1: 保守方法, 添加依赖参数, 保证其他方法调用无误 
 
 		/**
  		*  初始化
  		*
- 		*  @param orderID            订单
- 		*  @param orderNum           物品数量
- 		*  @param productName        商品名称
- 		*  @param productDescription 商品简介
- 		*  @param price              商品价格
+ 		*  @param orderID            订单(必填)
+ 		*  @param orderNum           物品数量(选填)
+ 		*  @param productName        商品名称(选填)
+ 		*  @param productDescription 商品简介(选填)
+ 		*  @param price              商品价格(选填)
  		*
  		*  @return self
  		*/
@@ -130,7 +130,7 @@
 
 方法2:默认方法
 
-	-(instancetype)init;
+	-(instancetype)init; //绝对不要调用!!
 	
 ###### 方法调用
 

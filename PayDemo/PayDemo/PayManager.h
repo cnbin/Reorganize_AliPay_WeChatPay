@@ -43,7 +43,17 @@ typedef void(^PayResult) (BOOL isSuccess);
 
 @property (nonatomic, assign) NHPayType payType;//支付方式
 
-
+/**
+ *  初始化
+ *
+ *  @param orderID            订单(必填)
+ *  @param orderNum           物品数量(选填)
+ *  @param productName        商品名称(选填)
+ *  @param productDescription 商品简介(选填)
+ *  @param price              商品价格(选填)
+ *
+ *  @return self
+ */
 -(instancetype)initWithOrderID:(NSString *)orderID
                       OrderNum:(NSString *)orderNum
                    productName:(NSString *)productName
