@@ -7,43 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		078F281B1C006150009D492F /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 078F28091C006150009D492F /* AFHTTPRequestOperation.m */; settings = {ASSET_TAGS = (); }; };
-		078F281C1C006150009D492F /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 078F280B1C006150009D492F /* AFHTTPRequestOperationManager.m */; settings = {ASSET_TAGS = (); }; };
-		078F281D1C006150009D492F /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 078F280D1C006150009D492F /* AFHTTPSessionManager.m */; settings = {ASSET_TAGS = (); }; };
-		078F281E1C006150009D492F /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 078F28101C006150009D492F /* AFNetworkReachabilityManager.m */; settings = {ASSET_TAGS = (); }; };
-		078F281F1C006150009D492F /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 078F28121C006150009D492F /* AFSecurityPolicy.m */; settings = {ASSET_TAGS = (); }; };
-		078F28201C006150009D492F /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 078F28141C006150009D492F /* AFURLConnectionOperation.m */; settings = {ASSET_TAGS = (); }; };
-		078F28211C006150009D492F /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 078F28161C006150009D492F /* AFURLRequestSerialization.m */; settings = {ASSET_TAGS = (); }; };
-		078F28221C006150009D492F /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 078F28181C006150009D492F /* AFURLResponseSerialization.m */; settings = {ASSET_TAGS = (); }; };
-		078F28231C006150009D492F /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 078F281A1C006150009D492F /* AFURLSessionManager.m */; settings = {ASSET_TAGS = (); }; };
-		078F28361C006A0F009D492F /* ApiXml.mm in Sources */ = {isa = PBXBuildFile; fileRef = 078F282E1C006A0F009D492F /* ApiXml.mm */; settings = {ASSET_TAGS = (); }; };
-		078F28371C006A0F009D492F /* payRequsestHandler.mm in Sources */ = {isa = PBXBuildFile; fileRef = 078F28301C006A0F009D492F /* payRequsestHandler.mm */; settings = {ASSET_TAGS = (); }; };
-		078F28381C006A0F009D492F /* WXUtil.mm in Sources */ = {isa = PBXBuildFile; fileRef = 078F28321C006A0F009D492F /* WXUtil.mm */; settings = {ASSET_TAGS = (); }; };
-		078F28391C006A0F009D492F /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 078F28331C006A0F009D492F /* libWeChatSDK.a */; settings = {ASSET_TAGS = (); }; };
-		078F283F1C006A3B009D492F /* AlipayOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 078F283C1C006A3B009D492F /* AlipayOrder.m */; settings = {ASSET_TAGS = (); }; };
-		078F28401C006A3B009D492F /* APAuthV2Info.m in Sources */ = {isa = PBXBuildFile; fileRef = 078F283E1C006A3B009D492F /* APAuthV2Info.m */; settings = {ASSET_TAGS = (); }; };
-		078F28561C006E24009D492F /* base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 078F28461C006E24009D492F /* base64.m */; settings = {ASSET_TAGS = (); }; };
-		078F28571C006E24009D492F /* DataSigner.m in Sources */ = {isa = PBXBuildFile; fileRef = 078F28491C006E24009D492F /* DataSigner.m */; settings = {ASSET_TAGS = (); }; };
-		078F28581C006E24009D492F /* DataVerifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 078F284B1C006E24009D492F /* DataVerifier.m */; settings = {ASSET_TAGS = (); }; };
-		078F28591C006E24009D492F /* MD5DataSigner.m in Sources */ = {isa = PBXBuildFile; fileRef = 078F284D1C006E24009D492F /* MD5DataSigner.m */; settings = {ASSET_TAGS = (); }; };
-		078F285A1C006E24009D492F /* NSDataEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 078F284F1C006E24009D492F /* NSDataEx.m */; settings = {ASSET_TAGS = (); }; };
-		078F285B1C006E24009D492F /* openssl_wrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 078F28511C006E24009D492F /* openssl_wrapper.m */; settings = {ASSET_TAGS = (); }; };
-		078F285C1C006E24009D492F /* RSADataSigner.m in Sources */ = {isa = PBXBuildFile; fileRef = 078F28531C006E24009D492F /* RSADataSigner.m */; settings = {ASSET_TAGS = (); }; };
-		078F285D1C006E24009D492F /* RSADataVerifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 078F28551C006E24009D492F /* RSADataVerifier.m */; settings = {ASSET_TAGS = (); }; };
+		078F281B1C006150009D492F /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 078F28091C006150009D492F /* AFHTTPRequestOperation.m */; };
+		078F281C1C006150009D492F /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 078F280B1C006150009D492F /* AFHTTPRequestOperationManager.m */; };
+		078F281D1C006150009D492F /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 078F280D1C006150009D492F /* AFHTTPSessionManager.m */; };
+		078F281E1C006150009D492F /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 078F28101C006150009D492F /* AFNetworkReachabilityManager.m */; };
+		078F281F1C006150009D492F /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 078F28121C006150009D492F /* AFSecurityPolicy.m */; };
+		078F28201C006150009D492F /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 078F28141C006150009D492F /* AFURLConnectionOperation.m */; };
+		078F28211C006150009D492F /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 078F28161C006150009D492F /* AFURLRequestSerialization.m */; };
+		078F28221C006150009D492F /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 078F28181C006150009D492F /* AFURLResponseSerialization.m */; };
+		078F28231C006150009D492F /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 078F281A1C006150009D492F /* AFURLSessionManager.m */; };
+		078F28361C006A0F009D492F /* ApiXml.mm in Sources */ = {isa = PBXBuildFile; fileRef = 078F282E1C006A0F009D492F /* ApiXml.mm */; };
+		078F28371C006A0F009D492F /* payRequsestHandler.mm in Sources */ = {isa = PBXBuildFile; fileRef = 078F28301C006A0F009D492F /* payRequsestHandler.mm */; };
+		078F28381C006A0F009D492F /* WXUtil.mm in Sources */ = {isa = PBXBuildFile; fileRef = 078F28321C006A0F009D492F /* WXUtil.mm */; };
+		078F28391C006A0F009D492F /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 078F28331C006A0F009D492F /* libWeChatSDK.a */; };
+		078F283F1C006A3B009D492F /* AlipayOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 078F283C1C006A3B009D492F /* AlipayOrder.m */; };
+		078F28401C006A3B009D492F /* APAuthV2Info.m in Sources */ = {isa = PBXBuildFile; fileRef = 078F283E1C006A3B009D492F /* APAuthV2Info.m */; };
+		078F28561C006E24009D492F /* base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 078F28461C006E24009D492F /* base64.m */; };
+		078F28571C006E24009D492F /* DataSigner.m in Sources */ = {isa = PBXBuildFile; fileRef = 078F28491C006E24009D492F /* DataSigner.m */; };
+		078F28581C006E24009D492F /* DataVerifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 078F284B1C006E24009D492F /* DataVerifier.m */; };
+		078F28591C006E24009D492F /* MD5DataSigner.m in Sources */ = {isa = PBXBuildFile; fileRef = 078F284D1C006E24009D492F /* MD5DataSigner.m */; };
+		078F285A1C006E24009D492F /* NSDataEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 078F284F1C006E24009D492F /* NSDataEx.m */; };
+		078F285B1C006E24009D492F /* openssl_wrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 078F28511C006E24009D492F /* openssl_wrapper.m */; };
+		078F285C1C006E24009D492F /* RSADataSigner.m in Sources */ = {isa = PBXBuildFile; fileRef = 078F28531C006E24009D492F /* RSADataSigner.m */; };
+		078F285D1C006E24009D492F /* RSADataVerifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 078F28551C006E24009D492F /* RSADataVerifier.m */; };
 		07CF65A61BFC7D0E00070288 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CF65A51BFC7D0E00070288 /* main.m */; };
 		07CF65A91BFC7D0E00070288 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CF65A81BFC7D0E00070288 /* AppDelegate.m */; };
 		07CF65AC1BFC7D0E00070288 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CF65AB1BFC7D0E00070288 /* ViewController.m */; };
 		07CF65AF1BFC7D0E00070288 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07CF65AD1BFC7D0E00070288 /* Main.storyboard */; };
 		07CF65B11BFC7D0E00070288 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07CF65B01BFC7D0E00070288 /* Assets.xcassets */; };
 		07CF65B41BFC7D0E00070288 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07CF65B21BFC7D0E00070288 /* LaunchScreen.storyboard */; };
-		07CF65BD1BFC7D4700070288 /* PayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CF65BC1BFC7D4700070288 /* PayManager.m */; settings = {ASSET_TAGS = (); }; };
-		07CF66131BFC7D8F00070288 /* DataMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CF65C01BFC7D8F00070288 /* DataMD5.m */; settings = {ASSET_TAGS = (); }; };
-		07CF66141BFC7D8F00070288 /* getIPhoneIP.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CF65C31BFC7D8F00070288 /* getIPhoneIP.m */; settings = {ASSET_TAGS = (); }; };
-		07CF66151BFC7D8F00070288 /* XMLDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CF66121BFC7D8F00070288 /* XMLDictionary.m */; settings = {ASSET_TAGS = (); }; };
-		07CF66311BFDC44E00070288 /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 07CF662D1BFDC44E00070288 /* AlipaySDK.bundle */; settings = {ASSET_TAGS = (); }; };
-		07CF66321BFDC44E00070288 /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07CF662E1BFDC44E00070288 /* AlipaySDK.framework */; settings = {ASSET_TAGS = (); }; };
-		07CF66331BFDC44E00070288 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07CF662F1BFDC44E00070288 /* libcrypto.a */; settings = {ASSET_TAGS = (); }; };
-		07CF66341BFDC44E00070288 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07CF66301BFDC44E00070288 /* libssl.a */; settings = {ASSET_TAGS = (); }; };
+		07CF66131BFC7D8F00070288 /* DataMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CF65C01BFC7D8F00070288 /* DataMD5.m */; };
+		07CF66141BFC7D8F00070288 /* getIPhoneIP.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CF65C31BFC7D8F00070288 /* getIPhoneIP.m */; };
+		07CF66151BFC7D8F00070288 /* XMLDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CF66121BFC7D8F00070288 /* XMLDictionary.m */; };
+		07CF66311BFDC44E00070288 /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 07CF662D1BFDC44E00070288 /* AlipaySDK.bundle */; };
+		07CF66321BFDC44E00070288 /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07CF662E1BFDC44E00070288 /* AlipaySDK.framework */; };
+		07CF66331BFDC44E00070288 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07CF662F1BFDC44E00070288 /* libcrypto.a */; };
+		07CF66341BFDC44E00070288 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07CF66301BFDC44E00070288 /* libssl.a */; };
+		34A422581D2E3A1300F86DA8 /* PayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A422571D2E3A1300F86DA8 /* PayManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -106,8 +106,6 @@
 		07CF65B01BFC7D0E00070288 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07CF65B31BFC7D0E00070288 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07CF65B51BFC7D0E00070288 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		07CF65BB1BFC7D4700070288 /* PayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayManager.h; sourceTree = "<group>"; };
-		07CF65BC1BFC7D4700070288 /* PayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayManager.m; sourceTree = "<group>"; };
 		07CF65BF1BFC7D8F00070288 /* DataMD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataMD5.h; sourceTree = "<group>"; };
 		07CF65C01BFC7D8F00070288 /* DataMD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataMD5.m; sourceTree = "<group>"; };
 		07CF65C21BFC7D8F00070288 /* getIPhoneIP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = getIPhoneIP.h; sourceTree = "<group>"; };
@@ -193,6 +191,8 @@
 		07CF662E1BFDC44E00070288 /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
 		07CF662F1BFDC44E00070288 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
 		07CF66301BFDC44E00070288 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = "<group>"; };
+		34A422561D2E3A1300F86DA8 /* PayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayManager.h; sourceTree = "<group>"; };
+		34A422571D2E3A1300F86DA8 /* PayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -314,6 +314,7 @@
 		07CF65A31BFC7D0E00070288 /* PayDemo */ = {
 			isa = PBXGroup;
 			children = (
+				34A422551D2E3A1300F86DA8 /* GQPayManager */,
 				078F28441C006E24009D492F /* Util */,
 				078F28071C006150009D492F /* AFNetworking */,
 				078F282B1C006A0F009D492F /* WeiChatPay */,
@@ -322,8 +323,6 @@
 				07CF65C11BFC7D8F00070288 /* GetIP */,
 				07CF65C41BFC7D8F00070288 /* openssl */,
 				07CF66101BFC7D8F00070288 /* XMLDictionary */,
-				07CF65BB1BFC7D4700070288 /* PayManager.h */,
-				07CF65BC1BFC7D4700070288 /* PayManager.m */,
 				07CF65A71BFC7D0E00070288 /* AppDelegate.h */,
 				07CF65A81BFC7D0E00070288 /* AppDelegate.m */,
 				07CF65AA1BFC7D0E00070288 /* ViewController.h */,
@@ -474,6 +473,15 @@
 			path = AliPay;
 			sourceTree = "<group>";
 		};
+		34A422551D2E3A1300F86DA8 /* GQPayManager */ = {
+			isa = PBXGroup;
+			children = (
+				34A422561D2E3A1300F86DA8 /* PayManager.h */,
+				34A422571D2E3A1300F86DA8 /* PayManager.m */,
+			);
+			path = GQPayManager;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -547,7 +555,6 @@
 				078F28361C006A0F009D492F /* ApiXml.mm in Sources */,
 				078F28571C006E24009D492F /* DataSigner.m in Sources */,
 				078F28381C006A0F009D492F /* WXUtil.mm in Sources */,
-				07CF65BD1BFC7D4700070288 /* PayManager.m in Sources */,
 				078F28221C006150009D492F /* AFURLResponseSerialization.m in Sources */,
 				078F28591C006E24009D492F /* MD5DataSigner.m in Sources */,
 				078F28201C006150009D492F /* AFURLConnectionOperation.m in Sources */,
@@ -568,6 +575,7 @@
 				07CF65A61BFC7D0E00070288 /* main.m in Sources */,
 				07CF66141BFC7D8F00070288 /* getIPhoneIP.m in Sources */,
 				078F285D1C006E24009D492F /* RSADataVerifier.m in Sources */,
+				34A422581D2E3A1300F86DA8 /* PayManager.m in Sources */,
 				078F281B1C006150009D492F /* AFHTTPRequestOperation.m in Sources */,
 				07CF66131BFC7D8F00070288 /* DataMD5.m in Sources */,
 				078F281D1C006150009D492F /* AFHTTPSessionManager.m in Sources */,
