@@ -60,7 +60,7 @@ NS_ASSUME_NONNULL_BEGIN
                       OrderNum:(nullable NSString *)orderNum
                    productName:(nullable NSString *)productName
             productDescription:(nullable NSString *)productDescription
-                         price:(nullable NSNumber)price;
+                         price:(nullable NSNumber *)price;
 
 
 #pragma mark - Ali pay
