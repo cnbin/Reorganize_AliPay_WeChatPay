@@ -25,15 +25,13 @@ Pod::Spec.new do |s|
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #开发者名字加邮箱
-  s.author             = { "SOOC" => "SOOC" }
-  # Or just: s.author    = "虾丸"
-  # s.authors            = { "虾丸" => "" }
-  # s.social_media_url   = "http://twitter.com/虾丸"
+  s.author             = { "SOOC" => "SOOC@newfaulter.cn" }
+  # s.social_media_url   = ""
 
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #支持的系统/支持的最低版本号
-  s.platform     = :ios, "5.0"
+  s.platform     = :ios, "8.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -44,13 +42,14 @@ Pod::Spec.new do |s|
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #git地址+tag号
-  s.source       = { :git => "http://EXAMPLE/gqpaymanager.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/gq630960023/Reorganize_AliPay_WeChatPay.git", :tag => "0.0.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #项目路径要传的文件
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
-  s.exclude_files = "Classes/Exclude"
+  s.source_files  = "Reorganize_AliPay_WeChatPay/PayDemo/GQPayManager/*.{h,m}"
+  #排除的文件
+  #s.exclude_files = "Classes/Exclude"
   # s.public_header_files = "Classes/**/*.h"
 
 
